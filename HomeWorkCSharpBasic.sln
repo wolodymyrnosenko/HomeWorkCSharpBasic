@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_04_2_Calculator", "Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_05_bonus", "Basic_05_bonus\Basic_05_bonus.csproj", "{998671FB-4C08-4F3B-8916-326C1EB042E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_05_1_exception_divide_by_zero", "Basic_05_1_exception_divide_by_zero\Basic_05_1_exception_divide_by_zero.csproj", "{61598B61-ECBE-4828-AA0A-B911BAB83A97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{998671FB-4C08-4F3B-8916-326C1EB042E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{998671FB-4C08-4F3B-8916-326C1EB042E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{998671FB-4C08-4F3B-8916-326C1EB042E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61598B61-ECBE-4828-AA0A-B911BAB83A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61598B61-ECBE-4828-AA0A-B911BAB83A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61598B61-ECBE-4828-AA0A-B911BAB83A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61598B61-ECBE-4828-AA0A-B911BAB83A97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
