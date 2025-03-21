@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_05_bonus", "Basic_05_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_05_1_exception_divide_by_zero", "Basic_05_1_exception_divide_by_zero\Basic_05_1_exception_divide_by_zero.csproj", "{61598B61-ECBE-4828-AA0A-B911BAB83A97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_05_2_NumberFormatException", "Basic_05_2_NumberFormatException\Basic_05_2_NumberFormatException.csproj", "{E5B9892C-E374-48E5-B077-E78E18E31DB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{61598B61-ECBE-4828-AA0A-B911BAB83A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61598B61-ECBE-4828-AA0A-B911BAB83A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61598B61-ECBE-4828-AA0A-B911BAB83A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5B9892C-E374-48E5-B077-E78E18E31DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B9892C-E374-48E5-B077-E78E18E31DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B9892C-E374-48E5-B077-E78E18E31DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B9892C-E374-48E5-B077-E78E18E31DB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
