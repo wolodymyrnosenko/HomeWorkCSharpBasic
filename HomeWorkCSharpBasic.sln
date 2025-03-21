@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_04_1_DayOfWeek", "Bas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_04_2_Calculator", "Basic_04_2_Calculator\Basic_04_2_Calculator.csproj", "{269702B4-E3F9-41D7-87FA-F55A5C566A0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_05_bonus", "Basic_05_bonus\Basic_05_bonus.csproj", "{998671FB-4C08-4F3B-8916-326C1EB042E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{269702B4-E3F9-41D7-87FA-F55A5C566A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{269702B4-E3F9-41D7-87FA-F55A5C566A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{269702B4-E3F9-41D7-87FA-F55A5C566A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{998671FB-4C08-4F3B-8916-326C1EB042E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{998671FB-4C08-4F3B-8916-326C1EB042E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{998671FB-4C08-4F3B-8916-326C1EB042E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{998671FB-4C08-4F3B-8916-326C1EB042E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
