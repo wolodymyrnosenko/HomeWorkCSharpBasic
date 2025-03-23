@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_02_1", "base_02_1\Basic_02_1.csproj", "{64E473E5-1382-4AC6-83E2-F599BA2F62B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic_02_1", "base_02_1\Basic_02_1.csproj", "{64E473E5-1382-4AC6-83E2-F599BA2F62B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_04_1_DayOfWeek", "Basic_04_1_DayOfWeek\Basic_04_1_DayOfWeek.csproj", "{284C340A-9774-4541-8071-AD025BDD4F29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic_04_1_DayOfWeek", "Basic_04_1_DayOfWeek\Basic_04_1_DayOfWeek.csproj", "{284C340A-9774-4541-8071-AD025BDD4F29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_04_2_Calculator", "Basic_04_2_Calculator\Basic_04_2_Calculator.csproj", "{269702B4-E3F9-41D7-87FA-F55A5C566A0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic_04_2_Calculator", "Basic_04_2_Calculator\Basic_04_2_Calculator.csproj", "{269702B4-E3F9-41D7-87FA-F55A5C566A0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_05_bonus", "Basic_05_bonus\Basic_05_bonus.csproj", "{998671FB-4C08-4F3B-8916-326C1EB042E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic_05_bonus", "Basic_05_bonus\Basic_05_bonus.csproj", "{998671FB-4C08-4F3B-8916-326C1EB042E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_05_1_exception_divide_by_zero", "Basic_05_1_exception_divide_by_zero\Basic_05_1_exception_divide_by_zero.csproj", "{61598B61-ECBE-4828-AA0A-B911BAB83A97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic_05_1_exception_divide_by_zero", "Basic_05_1_exception_divide_by_zero\Basic_05_1_exception_divide_by_zero.csproj", "{61598B61-ECBE-4828-AA0A-B911BAB83A97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_05_2_NumberFormatException", "Basic_05_2_NumberFormatException\Basic_05_2_NumberFormatException.csproj", "{E5B9892C-E374-48E5-B077-E78E18E31DB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic_05_2_NumberFormatException", "Basic_05_2_NumberFormatException\Basic_05_2_NumberFormatException.csproj", "{E5B9892C-E374-48E5-B077-E78E18E31DB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_06_1_Loops", "Basic_06_1_Loops\Basic_06_1_Loops.csproj", "{4F187044-0F9A-4F80-8FB1-EBB61B74CA09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{E5B9892C-E374-48E5-B077-E78E18E31DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5B9892C-E374-48E5-B077-E78E18E31DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5B9892C-E374-48E5-B077-E78E18E31DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F187044-0F9A-4F80-8FB1-EBB61B74CA09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F187044-0F9A-4F80-8FB1-EBB61B74CA09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F187044-0F9A-4F80-8FB1-EBB61B74CA09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F187044-0F9A-4F80-8FB1-EBB61B74CA09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
