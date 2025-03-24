@@ -12,7 +12,8 @@ namespace Basic_06_1_Loops
             string[] menuItems = {"0 - Завершення програми",
                                 "1 - Обчислення середнього заробітку",
                                 "2 - Побудова графіку зірочками",
-                                "3 - Генерація простих чисел"};
+                                "3 - Генерація простих чисел",
+                                "4 - Перевірка паролю"};
             int userChoice = -1;
             do
             {
@@ -42,6 +43,9 @@ namespace Basic_06_1_Loops
                         break;
                     case 3:
                         JustNumber.justNumber();
+                        break;
+                    case 4:
+                        CheckPassword.checkPassword();
                         break;
                 }
             }while(userChoice != 0);
