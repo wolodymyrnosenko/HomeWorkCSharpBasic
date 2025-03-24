@@ -11,7 +11,7 @@ namespace Basic_06_1_Loops
         public static void linesUsingStars()
         {
             Console.Clear();
-            Console.WriteLine("Побудова графіку зірочками: ");
+            Console.WriteLine("Побудова графіку зірочками");
             Console.Write("Введіть кількість рядків: ");
             int quantityStars = 0;
             try

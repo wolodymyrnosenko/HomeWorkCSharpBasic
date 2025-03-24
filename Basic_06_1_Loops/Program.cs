@@ -11,7 +11,8 @@ namespace Basic_06_1_Loops
 
             string[] menuItems = {"0 - Завершення програми",
                                 "1 - Обчислення середнього заробітку",
-                                "2 - Побудова графіку зірочками"};
+                                "2 - Побудова графіку зірочками",
+                                "3 - Генерація простих чисел"};
             int userChoice = -1;
             do
             {
@@ -38,6 +39,9 @@ namespace Basic_06_1_Loops
                         break;
                     case 2:
                         LinesUsingStars.linesUsingStars();
+                        break;
+                    case 3:
+                        JustNumber.justNumber();
                         break;
                 }
             }while(userChoice != 0);
