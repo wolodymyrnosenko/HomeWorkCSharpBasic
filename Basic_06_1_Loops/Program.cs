@@ -30,6 +30,14 @@ namespace Basic_06_1_Loops
                     Console.ReadLine();
                     continue;
                 }
+                switch(userChoice)
+                {
+                    case 1:
+                        AverageSalary.averageSalary();
+                        break;
+                        //case 2:
+
+                }
             }while(userChoice != 0);
         }
     }
