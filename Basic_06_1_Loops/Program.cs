@@ -10,7 +10,8 @@ namespace Basic_06_1_Loops
             Console.OutputEncoding = Encoding.Unicode;
 
             string[] menuItems = {"0 - Завершення програми",
-                                "1 - Обчислення середнього заробітку" };
+                                "1 - Обчислення середнього заробітку",
+                                "2 - Побудова графіку зірочками"};
             int userChoice = -1;
             do
             {
@@ -35,8 +36,9 @@ namespace Basic_06_1_Loops
                     case 1:
                         AverageSalary.averageSalary();
                         break;
-                        //case 2:
-
+                    case 2:
+                        LinesUsingStars.linesUsingStars();
+                        break;
                 }
             }while(userChoice != 0);
         }
