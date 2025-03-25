@@ -15,7 +15,8 @@ namespace Basic_06_1_Loops
                                 "3 - Генерація простих чисел",
                                 "4 - Перевірка паролю",
                                 "5 - Генерація фібоначчівської послідовності",
-                                "6 - Калькулятор оплати праці за годину"};
+                                "6 - Калькулятор оплати праці за годину",
+                                "7 - Генерація таблиці множення для конкретного числа"};
             int userChoice = -1;
             do
             {
@@ -54,6 +55,9 @@ namespace Basic_06_1_Loops
                         break;
                     case 6:
                         PayForHour.payForHour();
+                        break;
+                    case 7:
+                        MultiplicationTable.multiplicationTable();
                         break;
                 }
             }while(userChoice != 0);
