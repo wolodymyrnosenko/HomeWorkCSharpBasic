@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Basic_06_1_Loops
 {
-    internal class JustNumber
+    internal class CheckJustNumber
     {
-        public static void justNumber()
+        public static void checkJustNumber()
         {
             Console.Clear();
-            Console.WriteLine("Генерація простих чисел ");
-            Console.Write("Введіть від одного і більше кінцеве натуральне число: ");
-            int justNumber = 1;
+            Console.WriteLine("Перевірка на простоту");
+            Console.Write("Введіть натуральне число: ");
+            int justNumber = 0;
+            int debtor = 0;
             try
             {
                 justNumber = int.Parse(Console.ReadLine());
@@ -32,22 +33,24 @@ namespace Basic_06_1_Loops
             }
             else
             {
-                Console.WriteLine("Прості числа: ");
-                for (int i = 2, debtor; i <= justNumber; i++)
+                for (int i = 1; i <= justNumber; i++)
                 {
-                    debtor = 0;
-                    for (int j = 1; j <= i; j++)
+                    if (justNumber % i == 0)
                     {
-                        if (i % j == 0)
-                        {
-                            debtor++;
-                        }
+                        debtor++;
                     }
                     if (debtor > 2)
                     {
-                        continue;
+                        break;
                     }
-                    Console.Write(i + " ");
+                }
+                if (debtor == 2)
+                {
+                    Console.WriteLine($"{justNumber} - просте число");
+                }
+                else
+                {
+                    Console.WriteLine($"{justNumber} - не відноситься до простих чисел");
                 }
             }
             Console.ReadLine();

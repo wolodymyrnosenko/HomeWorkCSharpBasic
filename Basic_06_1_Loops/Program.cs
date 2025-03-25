@@ -16,7 +16,8 @@ namespace Basic_06_1_Loops
                                 "4 - Перевірка паролю",
                                 "5 - Генерація фібоначчівської послідовності",
                                 "6 - Калькулятор оплати праці за годину",
-                                "7 - Генерація таблиці множення для конкретного числа"};
+                                "7 - Генерація таблиці множення для конкретного числа",
+                                "8 - Перевірка на простоту"};
             int userChoice = -1;
             do
             {
@@ -58,6 +59,9 @@ namespace Basic_06_1_Loops
                         break;
                     case 7:
                         MultiplicationTable.multiplicationTable();
+                        break;
+                    case 8:
+                        CheckJustNumber.checkJustNumber();
                         break;
                 }
             }while(userChoice != 0);
