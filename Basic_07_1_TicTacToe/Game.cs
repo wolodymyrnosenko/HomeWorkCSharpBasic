@@ -1,69 +1,99 @@
 ﻿
 namespace Basic_07_1_TicTacToe
 {
-    enum player
-    {
-        O=79,
-        X=88
-    }
     internal class Game
     {
         char[] cells = new char[9];
-        bool playerXtrueOfalse = true;
-        //playerXtrueOfalse = !playerXtrueOfalse;
-        int move=0;//X~88, O~79
+        char move;
+        Player changePlayer;
+        int countOfMoves;
 
         public void Start()
         {
+            changePlayer = Player.X;
+            countOfMoves = 0;
+            //Initialize field (cells[]) from 1 to 9
             for (int i = 0; i < cells.Length; i++)
             {
                 cells[i] = (char)(i + 49);
             }
-            Show(cells);
-
-
-            //move = Convert.ToChar(Console.Read());
-            //if(move>=49 && move<=57)
-            //{
-            //    Console.WriteLine(cells[move-49]);
-            //    cells[move - 49] = (char)player.X;
-            //}
-
-            //move = int.Parse(Console.ReadKey());
-            //if(move>=1 && move<=9)
-            //{
-            //    Console.WriteLine(move);
-            //}
-
-
-            Show(cells);
-
+            //Start game
+            do
+            {
+                Show();
+                Move();
+            }while(!IsGameOver());
         }
-        void Show(char[] ar)
+        bool IsGameOver()
+        {
+            if ((cells[0] == cells[1] && cells[1] == cells[2]) ||
+                (cells[3] == cells[4] && cells[4] == cells[5]) ||
+                (cells[6] == cells[7] && cells[7] == cells[8]) ||
+                (cells[0] == cells[4] && cells[4] == cells[8]) ||
+                (cells[2] == cells[4] && cells[4] == cells[6]) ||
+                (cells[0] == cells[3] && cells[3] == cells[6]) ||
+                (cells[1] == cells[4] && cells[4] == cells[7]) ||
+                (cells[2] == cells[5] && cells[5] == cells[8]))
+            {
+                Show();
+                Console.WriteLine($"{Environment.NewLine}Переміг гравець {changePlayer}");
+                return true;
+            }else if(countOfMoves == 9)
+            {
+                Show();
+                Console.WriteLine($"{Environment.NewLine}Ничія");
+                return true;
+            }
+            else
+            {
+                changePlayer = (changePlayer == Player.X) ? Player.O : Player.X;
+                return false;
+            }
+        }
+        bool IsFilledCell(int index)
+        {
+            if (cells[index] >= 49 && cells[index] <= 57)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        void Move()
+        {
+            Console.Write($"{Environment.NewLine}{Environment.NewLine}Хід гравця {changePlayer}: ");
+            do
+            {
+                move = Console.ReadKey().KeyChar;
+                if (move >= 49 && move <= 57 && !IsFilledCell(move - 49))
+                {
+                    cells[move - 49] = (char)changePlayer;
+                    countOfMoves++;
+                    break;
+                }else 
+                {
+                    Console.WriteLine($"{Environment.NewLine}Введіть цифру від 1 до 9 незайнятої клітинки");
+                }
+            } while (move <= 49 || move >= 57 || (move >= 49 && move <= 57 && IsFilledCell(move - 49)));
+        }
+        void Show()
         {
             Console.Clear();
-            for (int i = 0; i < ar.Length; i++)
+            for (int i = 0; i < cells.Length; i++)
             {
-                //ar[i] = (char)(i + 49);
-                Console.Write($" {ar[i]} ");
+                Console.Write($" {cells[i]} ");
                 if((i + 1) == 9)
                 {
                     break;
                 }
-                if ((i+1)%3==0)
+                if ((i + 1) % 3 == 0)
                 {
                     Console.Write($"{Environment.NewLine}-----------{Environment.NewLine}");
                     continue;
                 }
                 Console.Write("|");
-            }
-            Console.Write($"{Environment.NewLine}{Environment.NewLine}хід ігрока");
-            if(playerXtrueOfalse)
-            {
-                Console.Write(" X: ");
-            }else
-            {
-                Console.Write(" O: ");
             }
         }
     }

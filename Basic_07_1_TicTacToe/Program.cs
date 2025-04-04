@@ -10,8 +10,13 @@ namespace Basic_07_1_TicTacToe
             Console.OutputEncoding = Encoding.Unicode;
 
             Game game = new Game();
-            game.Start();
-
+            char continueGame;
+            do
+            {
+                game.Start();
+                Console.Write("Continue (Yes - y)?: ");
+                continueGame = Console.ReadKey().KeyChar;
+            } while (continueGame == 'Y' || continueGame == 'y');
         }
     }
 }
