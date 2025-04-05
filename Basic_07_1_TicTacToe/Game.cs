@@ -76,7 +76,7 @@ namespace Basic_07_1_TicTacToe
                 {
                     Console.WriteLine($"{Environment.NewLine}Введіть цифру від 1 до 9 незайнятої клітинки");
                 }
-            } while (move <= 49 || move >= 57 || (move >= 49 && move <= 57 && IsFilledCell(move - 49)));
+            } while (move < 49 || move > 57 || (move >= 49 && move <= 57 && IsFilledCell(move - 49)));
         }
         void Show()
         {
