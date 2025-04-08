@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Basic_10_1_compare_fitst_letters
+namespace Basic_10_1_compare_first_letters
 {
     internal class Program
     {
