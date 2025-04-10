@@ -7,90 +7,46 @@ namespace Basic_09_1_Arrays_2
     {
         public static void SecondMaxAraryElementFunction(int rows, int columns)
         {
+            Console.Clear();
+            if (rows == 0 || columns == 0)
+            {
+                Console.WriteLine("двовимірний масив відсутній");
+                Console.ReadLine();
+                return;
+            }
             int[][] array = new int[rows][];
             for (int i = 0; i < rows; i++)
             {
                 array[i] = new int[columns];
             }
             Random rand = new Random();
-            int[][] maxValueCoordinates = new int[2][];
-            maxValueCoordinates[0][] = new int[2];//To save max element
-            maxValueCoordinates[1][] = new int[2];//To save second max element
-            for (int i = 0; i < size; i++)
+            int[] maxNumber = {int.MinValue, int.MinValue};//To save max and second max elements
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < size; j++)
+                for (int j = 0; j < columns; j++)
                 {
-                    array[i][j] = rand.Next(minRand, maxRand + 1);
+                    array[i][j] = rand.Next(1, 101);
                     Console.Write($"{array[i][j]}\t");
-
-                    if (i == 0 && j == 0)
+                    if (array[i][j] > maxNumber[0])
                     {
-                        max = array[i][j];
-                        countMax = 1;
-                        maxCoordinates[countMax * 2 - 2] = i;
-                        maxCoordinates[countMax * 2 - 1] = j;
-                        min = array[i][j];
-                        countMin = 1;
-                        minCoordinates[countMin * 2 - 2] = i;
-                        minCoordinates[countMin * 2 - 1] = j;
+                        maxNumber[1] = maxNumber[0];
+                        maxNumber[0] = array[i][j];
                     }
-                    //max = (max > array[i][j] ? max : array[i][j]);
-                    //min = (min < array[i][j] ? min : array[i][j]);
-
-                    //Check is max and record coordinates
-                    if (max < array[i][j])
+                    else if (array[i][j] > maxNumber[1] && array[i][j] != maxNumber[0])
                     {
-                        max = array[i][j];
-                        countMax = 1;
-                        maxCoordinates[countMax * 2 - 2] = i;
-                        maxCoordinates[countMax * 2 - 1] = j;
-                    }
-                    else if (max == array[i][j] && (i > 0 || j > 0))
-                    {
-                        countMax++;
-                        maxCoordinates[countMax * 2 - 2] = i;
-                        maxCoordinates[countMax * 2 - 1] = j;
-                    }
-
-                    //Check is min and record coordinates
-                    if (min > array[i][j])
-                    {
-                        min = array[i][j];
-                        countMin = 1;
-                        minCoordinates[countMin * 2 - 2] = i;
-                        minCoordinates[countMin * 2 - 1] = j;
-                    }
-                    else if (min == array[i][j] && (i > 0 || j > 0))
-                    {
-                        countMin++;
-                        minCoordinates[countMin * 2 - 2] = i;
-                        minCoordinates[countMin * 2 - 1] = j;
+                        maxNumber[1] = array[i][j];
                     }
                 }
                 Console.WriteLine();
             }
-            if (max == min)
+            if (maxNumber[0] == maxNumber[1] || maxNumber[1] == int.MinValue)
             {
                 Console.WriteLine("Масив заповнений однаковими числами");
+                Console.ReadLine();
+                return;
             }
-
-
-
-
-            if (array.Length == 0)
-            {
-                return 0;
-            }
-            int max = array[0];
-            foreach (int ar in array)
-            {
-                if (max > ar)
-                {
-                    max = ar;
-                }
-            }
-            return max;
-
+            Console.WriteLine($"Другий найбільший елемент: {maxNumber[1]}");
+            Console.ReadLine();
         }
     }
 }

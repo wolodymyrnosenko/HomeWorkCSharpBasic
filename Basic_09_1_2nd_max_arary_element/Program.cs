@@ -13,7 +13,7 @@ namespace Basic_09_1_Arrays_2
                                 "1 - Другий найбільший елемент у масиві",
                                 "2 - ",
                                 "3 - ",
-                                "4 - "};
+                                "4 - Сума елементів по діагоналі у двовимірному масиві"};
             int userChoice = -1;
             do
             {
@@ -36,13 +36,14 @@ namespace Basic_09_1_Arrays_2
                 switch (userChoice)
                 {
                     case 1:
-                        SecondMaxAraryElement.SecondMaxAraryElementFunction(7, 9);
+                        SecondMaxAraryElement.SecondMaxAraryElementFunction(5, 8);
                         break;
                     case 2:
                         break;
                     case 3:
                         break;
                     case 4:
+                        SumDiagonalElements.SumDiagonalElementsFunction(5);
                         break;
 
                 }
