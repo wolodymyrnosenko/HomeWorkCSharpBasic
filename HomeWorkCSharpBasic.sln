@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_10_1_compare_first_le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_09_1_Arrays_2_algorythms", "Basic_09_1_Arrays_2_algorythms\Basic_09_1_Arrays_2_algorythms.csproj", "{9B2F0D9B-3130-41D9-9C43-4069406E67C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_10_2_text_report", "Basic_10_2_text_report\Basic_10_2_text_report.csproj", "{29498301-4940-49C4-A5D7-16D12EB72F89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{9B2F0D9B-3130-41D9-9C43-4069406E67C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B2F0D9B-3130-41D9-9C43-4069406E67C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B2F0D9B-3130-41D9-9C43-4069406E67C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29498301-4940-49C4-A5D7-16D12EB72F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29498301-4940-49C4-A5D7-16D12EB72F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29498301-4940-49C4-A5D7-16D12EB72F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29498301-4940-49C4-A5D7-16D12EB72F89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
