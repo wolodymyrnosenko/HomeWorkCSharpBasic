@@ -45,7 +45,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_10_3_delete_spaces_st
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_10_1_compare_first_letters", "Basic_10_1_compare_fitst_letters\Basic_10_1_compare_first_letters.csproj", "{1D177B98-F5CA-4D6B-B326-2021199BF41E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_09_1_Arrays_2", "Basic_09_1_2nd_max_arary_element\Basic_09_1_Arrays_2.csproj", "{E30F3AF7-F937-407D-81A0-BD7460C29804}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_09_1_Arrays_2_algorythms", "Basic_09_1_Arrays_2_algorythms\Basic_09_1_Arrays_2_algorythms.csproj", "{9B2F0D9B-3130-41D9-9C43-4069406E67C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -137,10 +137,10 @@ Global
 		{1D177B98-F5CA-4D6B-B326-2021199BF41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D177B98-F5CA-4D6B-B326-2021199BF41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D177B98-F5CA-4D6B-B326-2021199BF41E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E30F3AF7-F937-407D-81A0-BD7460C29804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E30F3AF7-F937-407D-81A0-BD7460C29804}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E30F3AF7-F937-407D-81A0-BD7460C29804}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E30F3AF7-F937-407D-81A0-BD7460C29804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2F0D9B-3130-41D9-9C43-4069406E67C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2F0D9B-3130-41D9-9C43-4069406E67C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2F0D9B-3130-41D9-9C43-4069406E67C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2F0D9B-3130-41D9-9C43-4069406E67C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

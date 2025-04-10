@@ -1,5 +1,4 @@
-﻿
-namespace Basic_09_1_Arrays_2
+﻿namespace Basic_09_1_Arrays_2_algorythms
 {
     internal class SumDiagonalElements
     {
@@ -30,7 +29,7 @@ namespace Basic_09_1_Arrays_2
                     {
                         sumLeftDiagonal += array[i][j];
                     }
-                    if(i == (size - 1 - j))
+                    if (i == (size - 1 - j))
                     {
                         sumRightDiagonal += array[i][j];
                     }

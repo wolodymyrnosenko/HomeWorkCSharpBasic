@@ -1,11 +1,8 @@
-﻿
-using System.Drawing;
-
-namespace Basic_09_1_Arrays_2
+﻿namespace Basic_09_1_Arrays_2_algorythms
 {
     internal class SecondMaxAraryElement
     {
-        public static void SecondMaxAraryElementFunction(int rows, int columns)
+        public static void SecondMaxArrayElementFunction(int rows, int columns)
         {
             Console.Clear();
             if (rows == 0 || columns == 0)
@@ -20,7 +17,7 @@ namespace Basic_09_1_Arrays_2
                 array[i] = new int[columns];
             }
             Random rand = new Random();
-            int[] maxNumber = {int.MinValue, int.MinValue};//To save max and second max elements
+            int[] maxNumber = { int.MinValue, int.MinValue };//To save max and second max elements
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
