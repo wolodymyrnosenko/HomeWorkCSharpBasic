@@ -14,24 +14,19 @@ namespace Basic_13_1_ToDoList
             //List<string> toDoList = new List<string> {"one", "two", "three", "four", "five", "six", "seven"};//For test
             List<string> toDoList = new List<string> { };
 
-
-            string[] menuItems = {"0 - Завершення програми",
-                                "1 - Додавання справи",
-                                "2 - Виведення всіх справ",
-                                "3 - Відмітка про виконання",
-                                "4 - Видалення справи"};
-            int userChoice = -1;
+            Menu userChoice;
             do
             {
                 Console.Clear();
-                foreach (var menuItem in menuItems)
+                foreach (var menuItem in Enum.GetValues(typeof(Menu)))
                 {
-                    Console.WriteLine(menuItem);
+                    Console.WriteLine($"{(int)menuItem} - {menuItem}");
                 }
+
                 Console.Write("Введіть номер за списком: ");
                 try
                 {
-                    userChoice = Convert.ToInt32(Console.ReadLine());
+                    userChoice = (Menu)Convert.ToInt32(Console.ReadLine());
                 }
                 catch
                 {
@@ -41,21 +36,23 @@ namespace Basic_13_1_ToDoList
                 }
                 switch (userChoice)
                 {
-                    case 1:
+                    case Menu.Завершення_програми:
+                        return;
+                    case Menu.Додавання_справи:
                         AddToDoList(ref toDoList);
                         break;
-                    case 2:
+                    case Menu.Виведення_всіх_справ:
                         ShowToDoList(toDoList);
                         break;
-                    case 3:
+                    case Menu.Відмітка_про_виконання:
                         CheckToDoList(toDoList);
                         break;
-                    case 4:
+                    case Menu.Видалення_справи:
                         RemoveToDoList(toDoList);
                         break;
                 }
                 Console.ReadLine();
-            } while (userChoice != 0);
+            } while (true);
         }
         static void AddToDoList(ref List<string> lst)//Without ref created List (if null) do not exist in the other methods
         {
