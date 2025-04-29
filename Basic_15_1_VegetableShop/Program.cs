@@ -6,7 +6,6 @@ namespace Basic_15_1_VegetableShop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, vegetable shop!");
             var products = new List<Product>
             {
                 new Carrot(15),
@@ -16,8 +15,8 @@ namespace Basic_15_1_VegetableShop
 
             VegetableShop shop = new VegetableShop();
             shop.AddProducts(products);
+            //shop.AddProducts(new Tomato(100));
             shop.PrintProductsInfo();
-
         }
     }
 }

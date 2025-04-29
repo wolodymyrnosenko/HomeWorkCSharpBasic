@@ -23,20 +23,21 @@ namespace Basic_15_1_VegetableShop
                 Products.Add(product);
             }
         }
+        public void AddProducts(Product product)
+        {
+            Products.Add(product);
+        }
 
         public void PrintProductsInfo()
         {
-            Console.WriteLine("Output:");
+            Console.Write("Output:");
             double totalPrice = 0;
-            string className;
             foreach(var product in Products)
-            {
-                className = TypeDescriptor.GetClassName(product);//Separate class name
-
-                Console.WriteLine($"Product: {className}, Price: {product.BasePrice}");
+            { 
+                product.PrintProductInfo();
                 totalPrice += product.BasePrice;
             }
-            Console.WriteLine($"Total products price: {totalPrice}");
+            Console.WriteLine($"{Environment.NewLine}Total products price: {totalPrice}");
         }
     }
 }

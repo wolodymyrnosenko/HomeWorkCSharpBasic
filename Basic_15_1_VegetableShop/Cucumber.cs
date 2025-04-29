@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace Basic_15_1_VegetableShop
 {
-    class Cucumber : Product
+    sealed class Cucumber : Product
     {
-        public double BasePrice { get; private set; }
         public double Count { get; private set; }
-
-        public Cucumber(double basePrice, double count): base(basePrice)
+        public double Price { get; private set; }
+        public Cucumber(double basePrice, double count)
         {
-            BasePrice = basePrice * count;
             Count = count;
+            Price = basePrice;
+            BasePrice = basePrice * count;
         }
-
+        public override void PrintProductInfo()
+        {
+            string className = GetType().Name;
+            Console.Write($"{Environment.NewLine}Product: {className}, Price: {Price}, Count: {Count}, Total price: {BasePrice}");
+        }
     }
 }

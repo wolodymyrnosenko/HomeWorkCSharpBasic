@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Basic_15_1_VegetableShop
 {
-    class Carrot : Product
+    sealed class Carrot : Product
     {
-        public Carrot(double basePrice) : base(basePrice)
+        public Carrot(double basePrice)
         {
+            BasePrice = basePrice;
         }
     }
 }
