@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_16_1_CopyTxtFile", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_15_1_VegetableShop", "Basic_15_1_VegetableShop\Basic_15_1_VegetableShop.csproj", "{9187275B-DC3D-4BA8-84A5-726C8B8A148D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_16_bonus_01_FileCSV", "Basic_16_bonus_01_FileCSV\Basic_16_bonus_01_FileCSV.csproj", "{534A03E0-9F67-4ACF-9AB2-D735D0DD046C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +245,10 @@ Global
 		{9187275B-DC3D-4BA8-84A5-726C8B8A148D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9187275B-DC3D-4BA8-84A5-726C8B8A148D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9187275B-DC3D-4BA8-84A5-726C8B8A148D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{534A03E0-9F67-4ACF-9AB2-D735D0DD046C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534A03E0-9F67-4ACF-9AB2-D735D0DD046C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534A03E0-9F67-4ACF-9AB2-D735D0DD046C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534A03E0-9F67-4ACF-9AB2-D735D0DD046C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
