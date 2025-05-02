@@ -109,7 +109,8 @@ namespace Basic_13_1_ToDoList_rev2
                 try
                 {
                     Console.Write($"{Environment.NewLine}Введіть номер справи: ");
-                    indexEvent = Convert.ToInt32(Console.ReadKey().KeyChar.ToString());
+                    //indexEvent = Convert.ToInt32(Console.ReadKey().KeyChar.ToString());//Alow to use to-do list only less 10 items
+                    indexEvent = Convert.ToInt32(Console.ReadLine().ToString());
                     if (indexEvent <= 0 || indexEvent > lst.Count)
                     {
                         Console.Write($"{Environment.NewLine}За таким номером справа відсутня");
